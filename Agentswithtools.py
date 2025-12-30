@@ -10,28 +10,28 @@ tools = [
     Tool(
         name="duckduckgo_search",
         func=duckduckgo_search,
-        description="Search the web for news, articles, and information"
+        description="Search DuckDuckGo for news, articles, and general information. Use for topics requiring web research."
     ),
     Tool(
-        name="youtube_search_tool",
+        name="youtube_search",
         func=youtube_search_tool,
-        description="Search YouTube for videos, tutorials, and visual content"
+        description="Search YouTube for video tutorials and content. Use when user asks for videos or tutorials."
     ),
     Tool(
         name="fetch_url",
         func=fetch_url,
-        description="Fetch full content from a specific URL"
+        description="Fetch and extract text content from a specific webpage URL."
     ),
     Tool(
-        name="extract_pdf_text",
+        name="extract_pdf",
         func=extract_pdf_text,
-        description=" Extract and read text from PDF files (local path or URL)"
+        description="Extract text content from a PDF file. Input should be a local file path or URL ending in .pdf"
     ),
     Tool(
-        name="extract_docx_text",
+        name="extract_docx",
         func=extract_docx_text,
-        description="Extract text from DOCX files (local path or URL)"
-    ),
+        description="Extract text content from a DOCX file. Input should be a local file path or URL ending in .docx"
+    )
 ]
 
 
