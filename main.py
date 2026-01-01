@@ -1,29 +1,13 @@
 # main.py
-from workflow import build_graph
-from workflow import AgentState
-
-def main():
-    print("=== Agentic AI Research Assistant ===\n")
-    
-   
-    user_topic = input("Enter the topic you want the agent to research: ").strip()
-    if not user_topic:
-        print("No topic entered. Exiting...")
-        return
-   
-    workflow_app = build_graph()
-    initial_state: AgentState = {
-        "messages": [],
-        "user_input": user_topic
-    }
-    
-    print("\n--- Running the workflow ---\n")
-    final_state = workflow_app.invoke(initial_state)
-    
-    # 3️⃣ عرض النتائج
-    print("\n--- Final Workflow State ---\n")
-    for i, msg in enumerate(final_state["messages"], 1):
-        print(f"[{i}] {msg}\n")
+import json
+from workflow import run_and_save
 
 if __name__ == "__main__":
-    main()
+    user_input = input("Enter PDF/DOCX path, URL, or search query: ").strip()
+    slides_count = input("Number of slides (default 5): ").strip()
+    slides_count = int(slides_count) if slides_count.isdigit() else 5
+    json_name = input("JSON filename (e.g., slides.json): ").strip() or "output.json"
+
+    result = run_and_save(user_input, slides_count, json_name)
+    print("\n--- JSON OUTPUT ---\n")
+    print(json.dumps(result, indent=2))

@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {
+      "slide_type": "Title slide",
+      "title": "Introduction to LLMs in Python: Fine-Tuning Fundamentals",
+      "content": "This module covers practical Python implementation for LLM fine-tuning: loading datasets (e.g., IMDb), tokenization, Trainer configuration, and evaluating sentiment models. Key concepts include pipelines, auto classes, and partial fine-tuning strategies."
+    }
+  ],
+  "summary": "This single slide introduces foundational Python workflows for fine-tuning LLMs, focusing on dataset preparation, tokenization, and model training with the Trainer class to achieve effective sentiment analysis through practical implementation examples."
+}
