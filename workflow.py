@@ -10,7 +10,6 @@ import json
 from langchain_ollama import ChatOllama
 
 # STATE
-# -------------------------
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
     input_type: str
