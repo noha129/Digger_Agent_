@@ -1,4 +1,4 @@
-# Digger Agent — Agentic AI Research Assistant ✅
+# Digger Agent — Agentic AI Research Assistant: ✅
 
 **Digger Agent** is a small, local agentic research assistant that uses LangChain components and local model backends to research topics, fetch web content (DuckDuckGo / YouTube / URLs) and extract text from PDFs / DOCX files, then synthesize the findings into a concise JSON-formatted slide deck.
 

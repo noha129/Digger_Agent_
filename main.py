@@ -1,4 +1,3 @@
-# main.py
 import json
 from workflow import run_and_save
 

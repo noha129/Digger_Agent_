@@ -8,11 +8,6 @@ from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
 from langchain_community.tools import YouTubeSearchTool
 
 
-
-
-
-
-# -------------------------
 ddg = DuckDuckGoSearchAPIWrapper()
 
 @tool
